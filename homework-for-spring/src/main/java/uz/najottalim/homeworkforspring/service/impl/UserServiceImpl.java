@@ -7,11 +7,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import uz.najottalim.homeworkforspring.dto.UserDto;
+import uz.najottalim.homeworkforspring.dto.dtoFor.ArticleDtoForUser;
 import uz.najottalim.homeworkforspring.repository.UserRepository;
 import uz.najottalim.homeworkforspring.service.UserService;
 import uz.najottalim.homeworkforspring.service.mapper.UserMapper;
 
+import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -25,11 +28,21 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+    @Override
+    public void deleteUser(Integer id) {
+
+    }
+
     public ResponseEntity<UserDto> getUser(Integer id) {
         return null;
     }
 
     public ResponseEntity<UserDto> updateUser(UserDto userDto) {
+        return null;
+    }
+
+    @Override
+    public List<ArticleDtoForUser> findArticlesByUserId(Long id, Optional<String> sort, Optional<Integer> size, Optional<Integer> pNum) {
         return null;
     }
 }

@@ -106,4 +106,19 @@ public class ArticleServicesImpl implements ArticleServices {
         articleRepository.save(article);
         return ResponseEntity.accepted().body(articleMapper.toDto(article));
     }
+
+    @Override
+    public ResponseEntity<List<ArticlesDto>> getArticleDtoWithPage(Optional<String> sort, Optional<Integer> size, Optional<Integer> pNum) {
+        return null;
+    }
+
+    @Override
+    public ResponseEntity<List<ArticlesDto>> getArticlesMostCommented(Optional<String> checkDate) {
+        return null;
+    }
+
+    @Override
+    public ResponseEntity<List<ArticlesDto>> getArticleWithSearch(Optional<String> title, Optional<List<String>> body, Optional<List<Long>> userId, Optional<String> minPublishDate, Optional<String> maxPublishDate) {
+        return null;
+    }
 }

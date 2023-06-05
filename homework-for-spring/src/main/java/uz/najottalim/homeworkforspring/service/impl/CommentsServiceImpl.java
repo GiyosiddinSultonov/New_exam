@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import uz.najottalim.homeworkforspring.dto.CommentsDto;
+import uz.najottalim.homeworkforspring.dto.dtoFor.CommentsDtoForUpdate;
 import uz.najottalim.homeworkforspring.repository.CommentsRepository;
 import uz.najottalim.homeworkforspring.service.CommentsServices;
 import uz.najottalim.homeworkforspring.service.mapper.CommentMapper;
@@ -25,7 +26,22 @@ public class CommentsServiceImpl implements CommentsServices {
     }
 
     @Override
+    public List<CommentsDto> findAll() {
+        return null;
+    }
+
+    @Override
     public ResponseEntity<List<CommentsDto>> getCommentsByArticleId(Integer article_id) {
+        return null;
+    }
+
+    @Override
+    public void deleteId(Integer id) {
+
+    }
+
+    @Override
+    public CommentsDto updateComment(CommentsDtoForUpdate commentsDtoForUpdate) {
         return null;
     }
 }

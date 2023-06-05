@@ -3,7 +3,6 @@ package uz.najottalim.homeworkforspring.dto;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
 @Setter
